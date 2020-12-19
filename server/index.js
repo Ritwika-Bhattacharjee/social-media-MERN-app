@@ -18,7 +18,7 @@ app.use('/posts', postRoutes);
 
 // https://www.mongodb.com/cloud/atlas
 
-const CONNECTION_URL = 'mongodb+srv://ritwika:ritwika2000@cluster0.huvcz.mongodb.net/<dbname>?retryWrites=true&w=majority';
+//const CONNECTION_URL = process.env.CONNECTION_URL;
 const PORT = process.env.PORT || 5000;
 
 mongoose.connect(process.env.CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true})
